@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="WhatsApp Image 2024-07-03 at 16.01.50_f6b9b50b.jpg"/> 
+    <style>
+         @font-face {
+            font-family: 'Mont';
+            src: url(fonts/Mont-HeavyDEMO.otf);
+        }
+
+        @font-face {
+            font-family: 'Montlight';
+            src: url(fonts/Mont-ExtraLightDEMO.otf);
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        .socialHeader {
+            height: 10px;
+            background-color: #fff;
+        }
+
+        .bgImg {
+            background-image: url("Screenshot\ 2024-07-06\ 221355.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            padding: 20px;
+        }
+
+        .logoImg {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .welcomeHeader {
+            font-family: 'Mont';
+            font-size: 6vw;
+            margin: 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .welcomeMsg {
+            font-family: 'Montlight';
+            font-size: 4vw;
+            margin: 0;
+            color: #fff;
+            text-align: center;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        .VisionMission {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .VisionHead, .MissionHead {
+            font-family: 'Mont';
+            font-size: 8vw;
+            color: #F5941F;
+            text-align: center;
+        }
+
+        .VisionMsg, .MissionMsg {
+            font-family: 'Montlight';
+            color: #000;
+            font-size: 4vw;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .GoalSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .goalImage {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .Goals {
+            background-color: #F5941F;
+            color: #fff;
+            width: 90%;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .GoalsHead {
+            font-family: 'Mont';
+            font-size: 8vw;
+        }
+
+        .goalList {
+            font-family: 'Montlight';
+            font-size: 4vw;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .goalList li {
+            margin: 10px 0;
+        }
+
+        .meetMe {
+            margin-top: 25px;
+            padding: 20px;
+        }
+
+        .meetHead {
+            font-family: 'Mont';
+            font-size: 8vw;
+            color: #F5941F;
+            text-align: center;
+        }
+
+        .meetSec {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .kudziImg {
+            width: 50vw;
+            max-width: 250px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+
+        .meetMsg {
+            font-family: 'Montlight';
+            font-size: 4vw;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .VisionMission {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .VisionHead, .MissionHead {
+                font-size: 3vw;
+                text-align: left;
+            }
+
+            .VisionMsg, .MissionMsg {
+                font-size: 2vw;
+                text-align: left;
+            }
+
+            .GoalSection {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .Goals {
+                border-radius: 20px 0 0 20px;
+                text-align: left;
+            }
+
+            .GoalsHead {
+                font-size: 2vw;
+                text-align: left;
+            }
+
+            .goalList {
+                font-size: 1.5vw;
+                text-align: left;
+            }
+
+            .meetSec {
+                flex-direction: row-reverse;
+                justify-content: center;
+            }
+
+            .meetMsg {
+                text-align: left;
+                max-width: 60%;
+            }
+
+            .contactForm {
+                max-width: 600px;
+            }
+
+            .eventsHeader {
+                font-size: 3vw;
+            }
+            .eventTitle {
+                font-size: 2vw;
+            }
+            .eventDate, .eventDesc {
+                font-size: 1.5vw;
+            }
+
+            .merchandiseHeader {
+                font-size: 3vw;
+            }
+
+            .merchPrice {
+                font-size: 2vw;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .welcomeHeader {
+                font-size: 80px;
+            }
+
+            .welcomeMsg {
+                font-size: 20px;
+            }
+
+            .VisionHead, .MissionHead {
+                font-size: 30px;
+            }
+
+            .VisionMsg, .MissionMsg {
+                font-size: 20px;
+            }
+
+            .GoalsHead {
+                font-size: 30px;
+            }
+
+            .goalList {
+                font-size: 20px;
+            }
+
+            .meetHead {
+                font-size: 30px;
+            }
+
+            .meetMsg {
+                font-size: 20px;
+            }
+
+           
+        }
+
+        .eventsSection {
+            padding: 20px;
+            text-align: center;
+            background-color: #f7f7f7;
+        }
+
+        .eventsHeader {
+            font-family: 'Mont';
+            font-size: 3vw;
+            color: #F5941F;
+        }
+
+        .carouselContainer {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #F5941F #f3f3f3; /* Thumb color and track color */
+        }
+
+        .carouselContainer::-webkit-scrollbar {
+    height: 8px; /* Slim height for horizontal scrollbar */
+}
+
+.carouselContainer::-webkit-scrollbar-track {
+    background: #f3f3f3; /* Track color */
+    border-radius: 10px;
+}
+
+.carouselContainer::-webkit-scrollbar-thumb {
+    background-color: #F5941F; /* Scroll thumb color */
+    border-radius: 10px;
+    border: 2px solid #f3f3f3; /* Adds padding around the thumb */
+}
+
+        .carouselItem {
+            min-width: 20%;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+            scroll-snap-align: center;
+        }
+
+        .eventImg {
+            max-width: 50%;
+            border-radius: 10px;
+        }
+
+        .eventTitle {
+            font-family: 'Mont';
+            font-size: 2vw;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .eventDate {
+            font-family: 'Montlight';
+            font-size: 1.5vw;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .eventDesc {
+            font-family: 'Montlight';
+            font-size: 1.5vw;
+            color: #333;
+        }
+
+        .contactForm {
+            background-color: #f3f3f3;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 90%;
+            text-align: center;
+        }
+
+        .contactForm h2{
+            font-family: 'Mont';
+        }
+
+        .contactForm input, .contactForm textarea, .contactForm button {
+            width: 50%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contactForm button {
+            background-color: #F5941F;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contactForm button:hover {
+            background-color: #e5831a;
+        }
+       
+        /* New styles for the merchandise section */
+        .merchandiseSection {
+            padding: 20px;
+            text-align: center;
+            background-color: #f3f3f3;
+        }
+
+        .merchandiseHeader {
+            font-family: 'Mont';
+            font-size: 5vw;
+            color: #F5941F;
+            margin-bottom: 20px;
+        }
+
+        .merchCarouselContainer {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: thin;
+            scrollbar-color: #F5941F #f3f3f3;
+        }
+
+        .merchCarouselContainer::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .merchCarouselContainer::-webkit-scrollbar-track {
+            background: #f3f3f3;
+            border-radius: 10px;
+        }
+
+        .merchCarouselContainer::-webkit-scrollbar-thumb {
+            background-color: #F5941F;
+            border-radius: 10px;
+            border: 2px solid #f3f3f3;
+        }
+
+        .merchCarouselItem {
+            min-width: 50%;
+            margin: 0 0px;
+            text-align: center;
+            scroll-snap-align: center;
+        }
+
+        .merchImage {
+            max-width: 40%;
+            border-radius: 10px;
+        }
+
+        .merchPrice {
+            font-family: 'Montlight';
+            font-size: 2vw;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .footerSection {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px;
+    font-family: 'Montlight';
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.footerEmail,
+.footerContact,
+.footerSocial {
+    font-size: 1em;
+}
+
+.footerEmail a {
+    color: #F5941F;
+    text-decoration: none;
+}
+
+.footerSocial a {
+    margin: 0 10px;
+}
+
+.socialIcon {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); /* Makes icons appear white */
+}
+.footerBottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+.footerBottom a {
+    color: #F5941F;
+    text-decoration: none;
+}
+
+.footerBottom a:hover {
+    color: #e5831a;
+}
+
+
+@media (max-width: 768px) {
+    .footerContent {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerEmail,
+    .footerContact,
+    .footerSocial {
+        margin: 10px 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="socialHeader"></div>
+<div class="bgImg">
+<div class="logo">
+    <img class="logoImg" src="TandCs changes (1).png"/>
+</div>
+<h1 class="welcomeHeader">Nathan Organisation</h1>
+<p class="welcomeMsg">Natan is a Hebrew word meaning ‘God has given’ and when I decided to start
+    the journey of an NGO this is the name that came into my heart. I believe so
+    much in giving back to the community, and I want to use this organization to
+    give to the children of God those that are less</p>
+</div>
+        <div class="VisionMission">
+            <div class="VisionHead">
+                OUR VISION
+                <div class="VisionMsg">
+                    Our vision is to help the female child and
+                    adolescence to see their potential by
+                    coaching and helping them grow in
+                    wisdom and in stature and in the favor of
+                    the Lord, therefore ensuring that girls and
+                    young women across the world grow to
+                    become powerful women in their
+                    societies.
+                </div>
+            </div>
+
+            <div class="MissionHead">
+                OUR MISSION
+                <div class="MissionMsg">
+                    We build the young woman and girl child
+                    to be a giver to the society and to know
+                    and understand that in the same way
+                    opportunities have been given to her, she
+                    can give to another girl.
+                </div>
+            </div>
+        </div>
+
+        <div class="GoalSection">
+            <div class="goalImg">
+                <img class="goalImage" src="GoalImag.png"/>
+            </div>
+            <div class="Goals">
+                <div class="GoalsHead">
+                    GOALS
+                </div>
+                <div class="goalList">
+                    <ul>
+                        <li>To ensure that young girls know who God is in their lives and the love He has for them</li>
+                        <li>To provide her with a comprehensive education</li>
+                        <li>To empower her to be confident and independent</li>
+                        <li>To maintain good mental health for girls</li>
+                        <li>To support her in reaching her full potential regardless of limitations</li>
+                        <li>To connect her with opportunities in the business world and foster her growth</li>
+                        <li>To nurture her development into a mature and responsible individual</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="meetMe">
+            <h1 class="meetHead">Hi, I'm Kudzi...</h1>
+            <div class="meetSec">
+                <div class="meetImg">
+                    <img class="kudziImg" src="IMG_9228.PNG"/>
+                </div>
+                <div class="meetMsg">
+                    This project is very dear to my heart it is quite personal if I should put it that way, ensuring
+                    that girl children have everything they need to survive and thrive in life will ensure that they
+                    are not taken for granted by a society that is ready to devour anyone who is seen as weak,
+                    especially from the opposite sex. If a girl is strong and independent, then they cannot be taken
+                    advantage of because they know who they are, their value, their strength and what they are
+                    capable of. This will not only be a onetime project, but it will grow to be a global powerhouse
+                    equipped to help girl children all over the world for generations to come,
+                    this organization will outlive me
+                </div>
+            </div>
+        </div>
+
+         <!-- Events Section -->
+    <div class="eventsSection">
+        <h2 class="eventsHeader">Upcoming Events</h2>
+        <div class="carouselContainer">
+            <!-- Event 1 -->
+            <div class="carouselItem">
+                <img class="eventImg" src="(2024).png" alt="Event Image 1">
+                <h3 class="eventTitle">Young Lady In Waiting</h3>
+                <p class="eventDate">Date: TBC</p>
+                <p class="eventDesc">Where young ladies living for the Lord gather.</p>
+            </div>
+            <!-- Event 2 -->
+            <!-- <div class="carouselItem">
+                <img class="eventImg" src="event2.jpg" alt="Event Image 2">
+                <h3 class="eventTitle">Event Title 2</h3>
+                <p class="eventDate">Date: February 10, 2024</p>
+                <p class="eventDesc">Another event description providing an overview of what attendees can expect.</p>
+            </div> -->
+            <!-- Add more events as needed -->
+        </div>
+    </div>
+
+     <!-- Merchandise Section -->
+     <div class="merchandiseSection">
+        <h2 class="merchandiseHeader">Our Merchandise</h2>
+        <div class="merchCarouselContainer">
+            <!-- Merchandise Item 1 -->
+            <div class="merchCarouselItem">
+                <img class="merchImage" src="Black back_.png" alt="Merchandise 1">
+                <p class="merchPrice">GoYe!</p>
+            </div>
+            <!-- Merchandise Item 2 -->
+            <div class="merchCarouselItem">
+                <img class="merchImage" src="Front.png" alt="Merchandise 2">
+                <p class="merchPrice">AmenSomebody</p>
+            </div>
+            <div class="merchCarouselItem">
+                <img class="merchImage" src="WhiteBack Person.png" alt="Merchandise 2">
+                <p class="merchPrice">GoYe!</p>
+            </div>
+            <div class="merchCarouselItem">
+                <img class="merchImage" src="WhiteBack.png" alt="Merchandise 2">
+                <p class="merchPrice">GoYe!</p>
+            </div>
+            <div class="merchCarouselItem">
+                <img class="merchImage" src="WhiteFront.png" alt="Merchandise 2">
+                <p class="merchPrice">AmenSomebody!</p>
+            </div>
+            <div class="merchCarouselItem">
+                <img class="merchImage" src="Artboard 1.png" alt="Merchandise 2">
+                <p class="merchPrice">GoYe!</p>
+            </div>
+            <!-- Add more merchandise items as needed -->
+        </div>
+    </div>
+
+        <div class="contactForm">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <footer class="footerSection">
+            <div class="footerContent">
+                <div class="footerEmail">
+                    <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+                </div>
+                <div class="footerContact">
+                    <p>Contact Us: (+27)74 693 5852</p>
+                </div>
+                <div class="footerSocial">
+                    <a href="https://facebook.com" target="_blank"><img src="facebook (2).png" alt="Facebook" class="socialIcon"></a>
+                    <a href="https://www.instagram.com/minister_kudzai/" target="_blank"><img src="instagram (2).png" alt="Instagram" class="socialIcon"></a>
+                    <a href="https://www.tiktok.com/@ministerkudzai_" target="_blank"><img src="tik-tok.png" alt="TikTok" class="socialIcon"></a>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>&copy; 2024 Nathan Organisation. Developed by <a href="https://techassistco.com" target="_blank">TechAssistCo</a></p>
+            </div>
+        </footer>
+        
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                var email = document.getElementById('email').value;
+                var subject = document.getElementById('subject').value;
+                var message = document.getElementById('message').value;
+                var mailto_link = 'mailto:matshayao@icloud.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(message + '\n\nFrom: ' + email);
+                window.location.href = mailto_link;
+            });
+        </script>
+        <script>
+            const carousel = document.querySelector('.carouselContainer');
+            carousel.addEventListener('wheel', (evt) => {
+                evt.preventDefault();
+                carousel.scrollLeft += evt.deltaY;
+            });
+        </script>
+
+<script>
+    const merchCarousel = document.querySelector('.merchCarouselContainer');
+    let scrollPosition = 0;
+    let autoScroll;
+
+    function autoScrollMerch() {
+        // Scroll by the width of one merchandise item
+        const itemWidth = merchCarousel.querySelector('.merchCarouselItem').offsetWidth + 20; // 20px for margin
+        scrollPosition += itemWidth;
+
+        // Check if we have reached the end of the container, then reset scroll position
+        if (scrollPosition >= merchCarousel.scrollWidth - merchCarousel.clientWidth) {
+            scrollPosition = 0; // Reset to the start
+        }
+
+        merchCarousel.scrollTo({
+            left: scrollPosition,
+            behavior: 'smooth'
+        });
+    }
+
+    // Start automatic scrolling every 2 seconds
+    function startAutoScroll() {
+        autoScroll = setInterval(autoScrollMerch, 2000);
+    }
+
+    // Stop automatic scrolling
+    function stopAutoScroll() {
+        clearInterval(autoScroll);
+    }
+
+    // Start auto-scrolling on page load
+    startAutoScroll();
+
+    // Pause on hover and resume on mouse leave
+    merchCarousel.addEventListener('mouseenter', stopAutoScroll);
+    merchCarousel.addEventListener('mouseleave', startAutoScroll);
+</script>
+
+
+</body>
+</html>
